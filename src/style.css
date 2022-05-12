@@ -113,6 +113,7 @@ a {
   color: #555673;
 }
 
+
 input {
   height: 30px;
   width: 16%;
@@ -131,9 +132,14 @@ input::placeholder {
   font-size: 19.4px;
 }
 
-.show_date {
-  height: 600px;
-  width: 100%;
+.show_athletes {
+  box-sizing: border-box;
+  height: auto;
+  width: 100vw;
+  padding: 0 15%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 20px;
 }
 
 footer img {
