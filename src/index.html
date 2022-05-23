@@ -45,25 +45,29 @@
         </a>
       </div>
     </main>
-
     <section class="sectionAtlethes">
       <div class="section_tittle_atlethes">
         <h2 class="tittle_atlethes">Atletas</h2>
       </div>
       <aside class="aside_filter_order">
-        <input list="filter_country" placeholder="Filtrar País" />
-        <datalist id="filter_country">
-          <option value="Alemania"></option>
-        </datalist>
-        <input list="order_alphabetically" placeholder="Ordenar por Nombre" />
+        <input
+          id="filter_country_input"
+          list="filter_country"
+          placeholder="Filtrar País"
+        />
+        <datalist id="filter_country"></datalist>
+        <input
+          id="order_name_input"
+          list="order_alphabetically"
+          placeholder="Ordenar por Nombre"
+        />
         <datalist id="order_alphabetically">
-          <option value="A-Z"></option>
-          <option value="Z-A"></option>
+          <option id="ascendente" value="A-Z"></option>
+          <option id="descendente" value="Z-A"></option>
         </datalist>
       </aside>
-      <div class="show_date">mostrar data aqui</div>
+      <div class="show_athletes"></div>
     </section>
-
     <footer>
       <img src="img_proyecto/olympic-logo.png" alt="Logo Olimpiadas" />
       <p>Elaborado por Angelica Contreras / Keymer Gamez</p>
