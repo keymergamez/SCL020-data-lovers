@@ -18,22 +18,22 @@
           <img src="img_proyecto/Logo_Data_Lovers.png" alt="Logo Data Lovers" />
         </figure>
         <nav class="main_nav__item">
-          <a href="#" class="start">Inicio</a>
-          <a href="#" class="atlethes">Atletas</a>
-          <a href="#" class="statistics">Estadísticas</a>
-          <a href="#" class="history">Historia</a>
+          <a href="#location.reload()" class="start">Inicio</a>
+          <a href="#atlethes" class="atlethes">Atletas</a>
+          <a href="#Statistics" class="statistics">Estadísticas</a>
+          <a href="#History" class="history">Historia</a>
         </nav>
       </header>
       <div class="main_text">
-        <h1 class="main_text__tittle">
+        <h1 class="main_text__title">
           Disciplina, constancia y organización, grandes resultados.
         </h1>
         <p class="main_text__subtitle">
           Conoce a las atletas de la categoría gimnasia rítmica que participarán
           en los Juegos Olímpicos Río 2016.
         </p>
-        <a href="#">
-          <button type="submit">
+        <a href="#atlethes">
+          <button class="button_show_Atlethes" type="submit">
             Conocer Atletas
             <img
               src="img_proyecto/icono_siguiente.png"
@@ -45,9 +45,9 @@
         </a>
       </div>
     </main>
-    <section class="sectionAtlethes">
-      <div class="section_tittle_atlethes">
-        <h2 class="tittle_atlethes">Atletas</h2>
+    <section id="atlethes" class="sectionAtlethes">
+      <div class="section_title_atlethes">
+        <h2 class="title_atlethes">Atletas</h2>
       </div>
       <aside class="aside_filter_order">
         <input
@@ -68,9 +68,43 @@
       </aside>
       <div class="show_athletes"></div>
     </section>
+    <section id="Statistics" class="sectionStatistics">
+      <div class="section_title_Statistics">
+        <h2 class="title_Statistics">Estadísticas</h2>
+      </div>
+      <div class="show_Statistics"></div>
+    </section>
+    <section id="History" class="sectionHistory">
+      <nav class="nav_title_History">
+        <h2 class="title_History">Historia de la Gimnasia Rítmica</h2>
+      </nav>
+      <div class="show_History">
+        <article>
+          <p>
+            La gimnasia rítmica es un evento femenino en el que las gimnastas
+            ejecutan sus maniobras sobre el suelo con una cuerda, un aro, una
+            pelota, unas mazas o una cinta, acompañadas de música. Hay eventos
+            individuales y grupales.
+          </p>
+          <p>
+            Hacia 1800, la gimnasia rítmica funcionaba bajo la apariencia de
+            gimnasia de grupo e incluía un rastro de coreografía elemental. El
+            deporte creció lentamente hasta que se disputaron las primeras
+            competiciones experimentales en Europa del Este en los años 30 y su
+            nueva complejidad empezó a atraer a un público más amplio.
+          </p>
+        </article>
+        <img
+          class="img_history"
+          src="img_proyecto/Img_history.png"
+          alt="Img_history"
+        />
+      </div>
+    </section>
+
     <footer>
       <img src="img_proyecto/olympic-logo.png" alt="Logo Olimpiadas" />
-      <p>Elaborado por Angelica Contreras / Keymer Gamez</p>
+      <p>Elaborado en 2022 por Angelica Contreras / Keymer Gamez</p>
     </footer>
     <!-- <div id="root"></div> -->
     <script src="main.js" type="module"></script>
