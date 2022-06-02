@@ -12,7 +12,7 @@ const showAthletes = (rhythmicGymnastics) => {
     .map(
       (currentAthlete) =>
         `<div class="athlete_Container">
-        <img src="img_proyecto/atleta.png" alt="atleta" />        
+        <img class="imgAthlete" src=${currentAthlete.img} alt="atleta" />        
         <h3>${currentAthlete.name}</h3>
         <p>${currentAthlete.team}</p>
         <button class="button_show_Atlethe" type="submit">
@@ -47,7 +47,7 @@ const uniqueArrayTeams = teams.filter(uniqueArray);
 
 // console.log("PRUEBA", getMedals(rhythmicGymnastics, uniqueArrayTeams));
 
-console.log(teams);
+// console.log(teams);
 const teamAthletesSelector = (uniqueArrayTeams) => {
   return uniqueArrayTeams
     .map((currentTeamOption) => `<option>${currentTeamOption}</option>`)
